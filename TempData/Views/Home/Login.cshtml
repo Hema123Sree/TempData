@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+<hr />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+@using (Html.BeginForm("login_Page", "Home"))
+{
+    @Html.Label("Your EmailId:")
+    @Html.TextBox("Email")
+    @Html.Label("Password:")
+    @Html.TextBox("Password")
+    <div>
+        <input type="submit" value="Login" class="btn btn-success" />
+    </div>
+}

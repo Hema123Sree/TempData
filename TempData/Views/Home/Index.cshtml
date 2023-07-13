@@ -1,0 +1,37 @@
+﻿
+@model TempData.Models.Registration
+@{
+    ViewBag.Title = "Index";
+}
+<h1>Index</h1>
+<hr />
+@using(Html.BeginForm("Save_Data","Home"))
+  {
+  
+        <div style="text-align:center;padding-right:25px">
+            @Html.Label("User Id:")
+            @Html.TextBox("Reg_Id")
+            
+        
+            @Html.Label("Name:")
+            @Html.TextBox("Candiadate_Name")
+            
+        </div>
+        <div style="text-align:center;padding:10px">
+            @Html.Label("Email:")
+            @Html.TextBox("Email")
+        
+
+            @Html.Label("Password")
+            @Html.TextBox("Password")
+            
+        </div>
+  
+          <div style="text-align:center;padding-top:15px">
+
+         <input type="submit" value="Show" class="btn btn-success"/>
+              </div>
+
+
+
+ }

@@ -1,0 +1,14 @@
+﻿@model TempData.Models.Registration
+@{
+    ViewBag.Title = "Save_Data";
+}
+
+@Html.TextBox("ID",(int)ViewBag.S_Reg_Id)<br/>
+@Html.TextBox("NAME",(string)ViewBag.S_Candiadate_Name)<br/>
+@Html.TextBox("EMAIL",(string)ViewBag.S_Email)<br/>
+@Html.TextBox("PWD",(string)ViewBag.S_Password)<br/>
+@using (Html.BeginForm("Login","Home"))
+            {
+                <input type="submit" value="Save" class="btn btn-success"/>
+            }
+
